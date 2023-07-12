@@ -3,6 +3,7 @@
 
 <head>
     <title>Maxima school</title>
+    <link rel="stylesheet" href="assets/itc-slider.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <meta charset="utf-8">
 </head>
@@ -16,6 +17,35 @@
                 <li><a href="#">О нас</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
+        </div>
+
+        <div class="itc-slider" data-slider="itc-slider" data-autoplay="true" data-interval="3000">
+            <div class="itc-slider-wrapper">
+                <div class="itc-slider-items">
+                    <div class="itc-slider-item">
+                        <img src="/file.jpg" alt="">
+                    </div>
+                    <div class="itc-slider-item">
+                        <img src="/file.jpg" alt="">
+                    </div>
+                    <div class="itc-slider-item">
+                        <img src="/file.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <ol class="itc-slider-indicators">
+                <!-- data-slide-to="0" – для перехода к 1 слайду -->
+                <li class="itc-slider-indicator" data-slide-to="0"></li>
+                <!-- data-slide-to="1" – для перехода к 2 слайду -->
+                <li class="itc-slider-indicator" data-slide-to="1"></li>
+                <!-- data-slide-to="2" – для перехода к 3 слайду -->
+                <li class="itc-slider-indicator" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+            <button class="itc-slider-btn itc-slider-btn-prev"></button>
+            <button class="itc-slider-btn itc-slider-btn-next"></button>
         </div>
 
         <div class="news-container">
@@ -77,6 +107,8 @@
             &copy; 2023 Maxima School. Все права защищены.
         </footer>
     </div>
+
+    <script src="assets/itc-slider.js" defer></script>
 </body>
 
 </html>
